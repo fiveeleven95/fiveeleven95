@@ -193,16 +193,16 @@ a:hover, a:focus{color:#767676; text-decoration:none;}
 }
 
 @media (max-width:575px){
-  .active{
-    margin-left:10px;
+  .active .nav-link{
+    margin-left:15px !important;
   }
-  .active:after{
+  .active .nav-link:after{
     content:" ";
     position: absolute;
-    top: 32%;
-    height: 36%;
+    top: 36% !important;
+    height: 36% !important;
     width: 2px;
-    left: -10px;
+    left: 2px !important;
     background-color: rgba(0,0,0,0.5);
   }
 }
@@ -395,7 +395,7 @@ img[data-image]{}
 }
 @media (max-width:575px){
  .container-contact{
-  margin-top:12.5vh;
+  margin-top:15px;
  }
 }
 .col-contact-email{
@@ -443,9 +443,6 @@ img[data-image]{}
 }
 
 @media (max-width:767px){
-  .col-contact-email{
-    margin-top:5vh;
-  }
   .div-address h3,
   .div-address a{
    font-size:18px;
@@ -457,19 +454,20 @@ img[data-image]{}
   }
   
   .div-address.right-align{
-   margin-bottom:15px !important;
+   margin-top:7.5px;
    text-align:left;
    border:none;
   }
+  .div-address.left-align{
+    margin-top:4vh;
+    margin-bottom:4vh;
+  }
 }
 @media (max-width:575px){
-  .col-contact-email{
-    margin-top:0vh;
-  }
   .div-address h3,
   .div-address a{
    font-size:16px;
-    padding-left:5px !important; 
+   padding-left:5px !important; 
   }
 }
  
@@ -580,17 +578,17 @@ img[data-image]{}
 
 @media (max-width:575px){
   .div-contact-icon{
-    width:34px;
+    width:30px;
     margin-right:20px;
     margin-left:5px;
-    padding-top:0;
+    padding-top:4px;
   }
   .col-contact-info{
-   margin-top:8vh;
+   margin-top:6vh;
   }
   .div-contact-info{
    width:initial;
-   height:34px;
+   height:30px;
    padding-top:2px;
   }
   .div-contact-info h3{
