@@ -356,27 +356,87 @@ img[data-image]{}
 /* ---  About Page Styles  --- */
 
 .container-about{
-  margin-top:30vh;
+  margin-top:5vh;
 }
 
-.col-about-body{
+.col-about-header,
+.col-about-body-left,
+.col-about-body-right{
   padding:0 30px !important;
 }
+
+.col-about-body-left,
+.col-about-body-right{
+  margin:15px 0 0 0 !important;
+}
+
+.col-about-body-right{
+  max-width:250px;
+  border-left: 1px solid rgba(0,0,0,0.2)
+}
+
+.col-about-header h1{
+  text-align:left;
+}
+
+.col-about-body-left p{
+  margin:0 0 20px 0;
+  text-align:justify;
+}
+
+.col-about-body-right div{
+  padding: 0 0 20px 0;
+}
+
+.col-about-body-right h2{
+  margin:0 10px 0 0!important;
+  font-weight:400;
+}
+.col-about-body-right h2,
+.col-about-body-right p{
+  margin:0;
+  font-size:18px;
+  display:inline-block;
+  text-align:left;
+}
+
+@media (max-width:1199px){
+ .col-about-body-left{
+ }
+ .col-about-body-right{
+   max-width:initial;
+   border:none;
+ }
+
+}
+
 @media (max-width:991px){
  .container-about{
-  margin-top:20vh;
+  margin-top:5vh;
+ }
+ .col-about-body-left{
+
  }
 }
 
 @media (max-width:767px){
  .container-about{
-  margin-top:15vh;
+  margin-top:5vh;
  }
+ .col-about-body h1{
+  font-size:28px;
+}
+
+.col-about-body-left p,
+.col-about-body-right p{
+  font-size:16px;
+}
+
 }
   
 @media (max-width:575px){
  .container-about{
-  margin-top:15vh;
+  margin-top:5vh;
  }
  .col-about-body{
    padding:0 15px !important;
