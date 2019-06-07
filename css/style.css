@@ -305,6 +305,8 @@ img[data-image]{}
 .img-top{background-position: center top;}
 .img-center{background-position: center center;}
 .img-bottom{background-position: center bottom;}
+.img-left{background-position: left center;}
+.img-right{background-position: right center;}
 
 
 
