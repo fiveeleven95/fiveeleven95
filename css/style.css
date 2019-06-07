@@ -346,11 +346,11 @@ img[data-image]{}
 .modal-img-enlarge .modal-header{
   position:absolute;
   display: block !important;
-  top:60%;  
+  bottom:15%; 
   max-width: 250px;
   height:auto !important;
   padding:10px 15px;
-  margin:0 0 10vh 0 !important;  
+  margin:0 0 5vh 0 !important;  
   z-index:1000;
   border:none !important;
   border-radius:0 5px 5px 0;
@@ -361,7 +361,7 @@ img[data-image]{}
 
 .modal-img-enlarge .modal-content:hover .modal-header,
 .modal-img-enlarge .modal-content:hover .modal-header{
-  opacity:.9;
+  opacity:.7;
   background: rgba(0,0,0,0.6);
   transition: .8s ease all .2s;
 }
