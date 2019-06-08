@@ -22,7 +22,7 @@ body{
   font-family: "Work Sans", Arial, sans-serif;
 }
 .container-main{ 
-  min-height:80vh;
+  min-height:85vh;
 }
 
 /* ------- Text Styles -------- */
@@ -466,7 +466,7 @@ img[data-image]{}
 /* ---  About Page Styles  --- */
 
 .container-about{
-  margin-top:5vh;
+   padding-top:5vh;
 }
 
 .col-about-header,
@@ -542,7 +542,7 @@ img[data-image]{}
 
 @media (max-width:991px){
  .container-about{
-  margin-top:5vh;
+
  }
  .col-about-header,
  .col-about-body-left{
@@ -559,7 +559,7 @@ img[data-image]{}
 
 @media (max-width:767px){
   .container-about{
-    margin-top:5vh;
+ 
   }
   .col-about-body h1{
     font-size:28px;
@@ -586,7 +586,7 @@ img[data-image]{}
   
 @media (max-width:575px){
  .container-about{
-  margin-top:5vh;
+
  }
  .col-about-body{
    padding:0 15px !important;
@@ -596,16 +596,16 @@ img[data-image]{}
 /* --- Contact Page Styles --- */
 
 .container-contact{
-  margin-top:15vh;
+  padding-top:15vh;
  }
 @media (max-width:767px){ 
   .container-contact{
-    margin-top:8vh;
+    padding-top:8vh;
   }
 }
 @media (max-width:575px){
  .container-contact{
-  margin-top:15px;
+  padding-top:15px;
  }
 }
 .col-contact-email{
