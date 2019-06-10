@@ -517,10 +517,9 @@ img[data-image]{}
   margin:0 10px 0 0!important;
   font-weight:400;
   letter-spacing:0;
-
+  min-width:100px;
 }
 .col-about-body-right p{
-  
 }
 .col-about-body-right h2,
 .col-about-body-right p{
@@ -540,23 +539,32 @@ img[data-image]{}
  .col-about-body-right{
   padding:0 15px 0 15px !important;
  }
+ .col-about-body-right h2{
+  min-width:97px;
+  margin:0 5px 0 0!important;
+ }
 }
 
 @media (max-width:991px){
- .container-about{
 
- }
  .col-about-header,
  .col-about-body-left{
   padding:0 15px !important;
  }
- 
- .col-about-body-right{
-  padding:0 30px 0 30px !important;
- }
+
 .col-about-body-right:first-of-type{
+  padding:0 20px 0 20px !important;
   border:none;
   }
+ .col-about-body-right:last-of-type{
+  padding:0 20px 0 30px !important;
+ }
+
+ .col-about-body-right h2{
+  min-width:100px;
+  margin:0 10px 0 0!important;  
+ }
+ 
 }
 
 @media (max-width:767px){
@@ -567,12 +575,6 @@ img[data-image]{}
     font-size:28px;
   }
 
-  .col-about-body-right{
-    padding:0 15px 0 15px !important;
-  }
-  .col-about-body-right:first-of-type{
-    border:none;
-  }
   .col-about-body-right div{
     padding:0 0 10px 0;
   }
@@ -587,17 +589,22 @@ img[data-image]{}
   }
   .col-about-body-right h2,
   .col-about-body-right p{
-   font-size:14px;
+   font-size:15px;
   }
 }
   
 @media (max-width:575px){
- .container-about{
-
- }
  .col-about-body{
    padding:0 15px !important;
  } 
+
+ .col-about-body-right:last-of-type{
+    padding:0 20px 0 20px !important;
+ }
+   .col-about-body-right h2,
+  .col-about-body-right p{
+   font-size:15px;
+  }
 }
 
 /* --- Contact Page Styles --- */
@@ -823,17 +830,17 @@ footer{
  position:relative;
  display:block;
  width:100%;
- height:60px;
- padding:15px 0 25px 0 !important;
+ height:70px;
+ padding:25px 0 25px 0 !important;
 }
 footer:before{
  content:"";
  position:absolute;
- top:10px;
+ top:25px;
  left:20%;
  width:60%;
  height:1px;
- background:rgba(0,0,0,0.1)
+ background:rgba(0,0,0,0.08)
 }
 
 footer .copyright{
@@ -841,4 +848,5 @@ footer .copyright{
   font-size:12px;
   line-height:20px;
   text-align:center;
+  font-style: italic;
 }
