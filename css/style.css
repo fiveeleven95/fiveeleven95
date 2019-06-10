@@ -322,7 +322,7 @@ a:focus {
 .col-media-half-t {
   padding: 0;
   overflow: hidden !important;
-  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06);
+  /*box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06);*/
   background: url(../img/loading-ring-gray.gif) center no-repeat;
   background-size: 50px;
 
@@ -369,7 +369,7 @@ img[data-image] {}
 .img-media-css-half-t:hover {
   /*filter:grayscale(20%);*/
   transform: scale(1.02);
-  transition: 1.2s ease-in transform, .4s ease-in box-shadow;
+  transition: 1.2s ease-in transform;
   cursor: pointer;
 }
 
