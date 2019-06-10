@@ -495,12 +495,14 @@ img[data-image]{}
 }
 
 .row-about-body-right{
-
+  padding-bottom:30px;
+  
 }
 
 .col-about-body-right{
   padding:0 0 0 30px !important;
-  border-left: 1px solid rgba(0,0,0,0.1)
+  border-left: 1px solid rgba(0,0,0,0.07);
+  max-height:300px;
 }
 
 .col-about-body-right div{
@@ -559,7 +561,7 @@ img[data-image]{}
 
 @media (max-width:767px){
   .container-about{
- 
+    padding-top:2.5vh;
   }
   .col-about-body h1{
     font-size:28px;
@@ -574,9 +576,14 @@ img[data-image]{}
   .col-about-body-right div{
     padding:0 0 10px 0;
   }
+  .col-about-header h1{
+    margin:30px 0 7.5px 0 !important;
+  }
 
   .col-about-body-left p{
    font-size:16px;
+   line-height:22px;
+   margin:0 0 15px 0 !important;
   }
   .col-about-body-right h2,
   .col-about-body-right p{
