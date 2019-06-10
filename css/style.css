@@ -225,7 +225,7 @@ a:focus {
 .nav-item .nav-link:focus,
 .nav-item.active .nav-link:hover,
 .nav-item.active .nav-link:focus {
-  color: #E3282B !important;
+  color: #555 !important;
   outline: none !important;
 }
 
