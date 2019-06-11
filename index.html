@@ -240,10 +240,12 @@
     <!-- Extract URL from 'data-tiny-image' -->
     <!-- attribute for small version CSS Background -->
     <script type="text/javascript">
-    var list = document.querySelectorAll("img[data-tiny-image]");
+    var list = document.querySelectorAll("img[data-image]");
+    //var list = document.querySelectorAll("img[data-tiny-image]");
     
     for (var i = 0; i < list.length; i++) {
-      var url = list[i].getAttribute('data-tiny-image');
+      var url = list[i].getAttribute('data-image');
+      //var url = list[i].getAttribute('data-tiny-image');
       list[i].style.backgroundImage="url('" + url + "')";
     }
    
