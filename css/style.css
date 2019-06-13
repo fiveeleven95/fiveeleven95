@@ -619,7 +619,7 @@ img[data-image] {}
 .row-about-body-right {
   padding-bottom: 30px;
   padding-left:5%;
-  margin: 30px 0 0 0 !important;
+  margin: 25px 0 0 0 !important;
 }
 
 .box-about-body-right{
@@ -639,12 +639,13 @@ img[data-image] {}
 }
 
 .col-about-body-right {
-  padding: 0 0 0 25px !important;
-  /*border-left: 1px solid rgba(0, 0, 0, 0.07);*/   
+  padding: 0 20px 0 15px !important;
 }
 
 
 .col-about-body-right div {
+  display: flex; 
+  align-items: flex-start;
   padding: 7.5px 0 7.5px 0;
 }
 
@@ -656,39 +657,45 @@ img[data-image] {}
   padding: 7.5px 0 0 0 !important;
 }
 
-.col-about-body-right h2 {
-  margin: 0 10px 0 0!important;
-  font-weight: 400;
-  letter-spacing: 0;
-  min-width: 100px;
-}
-
-.col-about-body-right p {}
-
-.col-about-body-right h2,
-.col-about-body-right p {
-  margin: 0;
+.col-about-body-right div h2,
+.col-about-body-right div p {
+  margin: 0 !important;
   font-size: 16px;
   line-height: 26px;
-  display: inline-block;
   text-align: left;
+  padding:0 10px;
 }
+
+.col-about-body-right div h2 {
+  flex-grow:0;
+  font-weight: 400;
+  letter-spacing: 0;
+  /*min-width: 100px;*/
+}
+
+.col-about-body-right div p {
+  flex-grow:0;
+  /*flex-basis:70px;*/
+  text-align:left;}
 
 .col-about-body-right div p i {
   font-style: normal !important;
   font-size: 14px;
 }
-
+ .col-about-body-right div .spacer-dots{
+   flex-grow:2;
+   border-bottom: 1px dotted rgba(0,0,0,0.1);
+   padding:0 !important;
+   margin:0 0 0 0 !important;
+   height:20px;
+ }
 
 @media (max-width:1199px) {
   .col-about-body-left {}
-  .col-about-body-right {
-    padding: 0 15px 0 30px !important;
-  }
+  .col-about-body-right {}
 
   .col-about-body-right h2 {
-    min-width: 97px;
-    margin: 0 5px 0 0!important;
+    margin:0!important;
   }
 }
 
@@ -701,12 +708,11 @@ img[data-image] {}
    padding: 10px 0 30px 0 !important;
   }
   .row-about-body-right {
-    padding-bottom: 30px;
-    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-left:30px;
     margin-top:0px !important;
   }
   .col-about-body-right {
-    padding: 0 20px 0 30px !important;
 
   }
   .col-about-body-right div{
@@ -722,8 +728,7 @@ img[data-image] {}
     padding: 7.5px 0 0 0 !important;
   }
   .col-about-body-right h2 {
-    min-width: 100px;
-    margin: 0 10px 0 0!important;
+
   }
 }
 
@@ -734,9 +739,11 @@ img[data-image] {}
   .col-cta-contact{
    padding: 10px 0 15px 0 !important;
   }
-  .col-about-body-right{
-    padding: 0 20px 0 20px !important;
+
+  .col-about-body-right {
+    padding: 0 15px 0 10px !important;
   }
+
   .col-about-body-right div{
     padding: 5px 0 5px 0 !important;
   }
