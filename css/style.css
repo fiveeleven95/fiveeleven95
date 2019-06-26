@@ -779,7 +779,7 @@ img[data-image] {}
 
 @media (max-width:575px) {
   .col-about-body-left {
-    padding: 0 6.5vw !important;
+    padding: 0 7vw 0 6.5vw !important;
   }
 
   .col-about-body-left p {
@@ -789,7 +789,7 @@ img[data-image] {}
 
   .row-about-body-right {
     padding-left:6.5vw;
-    padding-right:6.5vw;
+    padding-right:7vw;
   }
 
   .box-about-body-right{
