@@ -68,9 +68,6 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
   p{  font-size: 16px; margin: 0 0 10px 0; line-height:130%;}
   a {font-size:16px;}
 }
-@media(max-width:575px) {
-  
-}
 
 
 
@@ -132,8 +129,6 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
 .navbar {
   padding: .75rem 15px 0rem 15px;
 }
-
-.navbar-collapse {}
 
 @media(max-width:991px) {
   .navbar {
@@ -354,9 +349,67 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
   /*box-shadow: 0 1px 1px 0 rgba(0,0,0,0.06);*/
   background: url(../img/loading-ring-gray.gif) center no-repeat;
   background-size: 50px;
-
 }
 
+.col-media:before,
+.col-media-half:before,
+.col-media-half-w:before,
+.col-media-half-t:before{
+  content:"";
+  position:absolute;
+  z-index:1000;
+  background-image:url(../img/icons/magnify-w2ss.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  border-radius:0%;
+  opacity:0;
+   transition: .3s ease opacity .1s;
+ }
+  
+.col-media:before{
+  width: 4%;
+  height:4%;
+  top:4%;
+  left:4%;
+} 
+ 
+.col-media-half:before{
+  width: 8%;
+  height:8%;
+  top:8%;
+  left:8%;
+} 
+
+.col-media-half-w:before{
+  width: 4%;
+  height:8%;
+  top:8%;
+  left:4%;
+} 
+  
+.col-media-half-t:before{
+  width: 8%;
+  height:4%;
+  top:4%;
+  left:8%;
+} 
+   
+.col-media-all:hover:before,
+.col-media:hover:before,
+.col-media-half:hover:before,
+.col-media-half-w:hover:before,
+.col-media-half-t:hover:before{
+  opacity:.9;
+   transition: .2s ease opacity;
+ }
+ 
+@media (max-width:991px){
+  .col-media:before,
+  .col-media-half:before,
+  .col-media-half-w:before,
+  .col-media-half-t:before{ display:none;}
+}
+ 
 .col-media:hover,
 .col-media:focus,
 .col-media-half:hover,
@@ -379,8 +432,6 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
   display: block !important;
   width: auto !important;
 }
-
-img[data-image] {}
 
 .img-media-css,
 .img-media-css-half,
