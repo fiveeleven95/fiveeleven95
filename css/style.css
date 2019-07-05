@@ -399,7 +399,7 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
 .col-media-half:hover:before,
 .col-media-half-w:hover:before,
 .col-media-half-t:hover:before{
-  opacity:.9;
+  opacity:.8;
    transition: .2s ease opacity;
  }
  
