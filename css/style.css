@@ -358,49 +358,60 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
   content:"";
   position:absolute;
   z-index:1000;
-  background-image:url(../img/icons/magnify-w2ss.png);
+  width: 20px;
+  height:20px;
+  background-image:url(../img/icons/expand-w2t3.png);
   background-repeat: no-repeat;
-  background-size:cover;
-  border-radius:0%;
+  background-size:70%;
+  background-color:rgba(0,0,0,0.5);
+  background-position:center center;
+  border-radius:2px;
   opacity:0;
-   transition: .3s ease opacity .1s;
+   -webkit-transform: scale(.6);
+   transform: scale(.6);
+   transition: .3s ease opacity .1s, .4s ease transform .1s;
  }
   
 .col-media:before{
-  width: 4%;
-  height:4%;
+  /*width: 4%;
+  height:4%;*/
   top:4%;
   left:4%;
 } 
  
 .col-media-half:before{
-  width: 8%;
-  height:8%;
+  /*width: 8%;
+  height:8%;*/
   top:8%;
   left:8%;
 } 
 
 .col-media-half-w:before{
-  width: 4%;
-  height:8%;
+ /* width: 4%;
+  height:8%;*/
   top:8%;
   left:4%;
 } 
   
 .col-media-half-t:before{
-  width: 8%;
-  height:4%;
+ /* width: 8%;
+  height:4%;*/
   top:4%;
   left:8%;
 } 
    
-.col-media-all:hover:before,
 .col-media:hover:before,
+.col-media:focus:before,
 .col-media-half:hover:before,
+.col-media-half:focus:before,
 .col-media-half-w:hover:before,
-.col-media-half-t:hover:before{
-  opacity:.8;
-   transition: .2s ease opacity;
+.col-media-half-w:focus:before,
+.col-media-half-t:hover:before,
+.col-media-half-t:focus:before{
+  opacity:.6;
+   -webkit-transform: scale(1);
+   transform: scale(1);
+   transition: .3s ease-in opacity, .6s ease transform;
  }
  
 @media (max-width:991px){
