@@ -499,6 +499,33 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
 
 .img-zoom-out{}
 
+.col-media-insta{
+  border-radius:1px;
+  box-shadow:0 0 0px 1px rgba(0,0,0,0.1);
+
+}
+
+.col-media-insta a .img-media-half{
+     -webkit-transform: scale(1.05);
+   transform: scale(1.05);
+}
+
+.col-media-insta:before{
+  content:"";
+  position:absolute;
+  z-index:1000;
+  width: 24px;
+  height:24px;
+  background-image:url(../img/icons/insta-256.png);
+   -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-color:rgba(255, 255, 255,.9);
+  background-position:center center;
+  border-radius:7px;
+  border:1px solid rgba(255, 255, 255,.4);
+}
 /* --- Image Enlarge Modal --- */
 
 .modal-img-enlarge .modal-dialog .modal-content {
