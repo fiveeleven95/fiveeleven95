@@ -501,13 +501,13 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
 
 .col-media-insta{
   border-radius:1px;
-  box-shadow:0 0 0px 1px rgba(0,0,0,0.1);
+  box-shadow:0 0 0px 1px rgba(0,0,0,0.08);
 
 }
 
 .col-media-insta a .img-media-half{
-     -webkit-transform: scale(1.05);
-   transform: scale(1.05);
+     -webkit-transform: scale(1.25) translateY(9%);
+   transform: scale(1.25) translateY(9%);
 }
 
 .col-media-insta:before{
