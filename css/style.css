@@ -358,12 +358,11 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
   content:"";
   position:absolute;
   z-index:1000;
-  width: 20px;
-  height:20px;
-  background-image:url(../img/icons/expand-w2t3.png);
+  width: 30px;
+  height:30px;
+  background-image:url(../img/icons/icon-expand-2b-wbgtr.png);
   background-repeat: no-repeat;
   background-size:70%;
-  background-color:rgba(0,0,0,0.5);
   background-position:center center;
   border-radius:2px;
   opacity:0;
@@ -376,28 +375,28 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
   /*width: 4%;
   height:4%;*/
   top:4%;
-  left:4%;
+  right:4%;
 } 
  
 .col-media-half:before{
   /*width: 8%;
   height:8%;*/
   top:8%;
-  left:8%;
+  right:8%;
 } 
 
 .col-media-half-w:before{
  /* width: 4%;
   height:8%;*/
   top:8%;
-  left:4%;
+  right:4%;
 } 
   
 .col-media-half-t:before{
  /* width: 8%;
   height:4%;*/
   top:4%;
-  left:8%;
+  right:8%;
 } 
    
 .col-media:hover:before,
@@ -408,7 +407,7 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
 .col-media-half-w:focus:before,
 .col-media-half-t:hover:before,
 .col-media-half-t:focus:before{
-  opacity:.6;
+  opacity:.9;
    -webkit-transform: scale(1);
    transform: scale(1);
    transition: .3s ease-in opacity, .6s ease transform;
@@ -514,18 +513,15 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
   content:"";
   position:absolute;
   z-index:1000;
-  width: 24px;
-  height:24px;
-  background-image:url(../img/icons/insta-256.png);
-   -webkit-filter: brightness(100%);
-  filter: brightness(100%);
+  width: 20px;
+  height:20px;
+  background-image:none !important;
   background-repeat: no-repeat;
   background-size:cover;
-  background-color:rgba(255, 255, 255,.9);
-  background-position:center center;
-  border-radius:7px;
-  border:1px solid rgba(255, 255, 255,.4);
 }
+.col-media-insta:hover:before,
+.col-media-insta:focus:before{
+  opacity:1;}
 /* --- Image Enlarge Modal --- */
 
 .modal-img-enlarge .modal-dialog .modal-content {
