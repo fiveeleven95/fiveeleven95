@@ -1151,3 +1151,34 @@ footer .copyright {
   font-style: italic;
   margin:12px 0 8px 0 !important;
 }
+
+footer .copyright a {
+  color:#3A6DB3;
+  position:absolute;
+  left:10px;
+  opacity:.8;
+  display: inline-block;
+  font-size: 10px;
+  font-weight:500;
+  line-height: 18px;
+  text-align: center;
+  font-style: normal;
+  text-decoration:none;
+  border:1px solid rgba(68,116,181,.80);
+  border-radius:15px;
+  padding:2px 3px;
+  margin: -2px 0 0 0px !important;
+  /*margin:-10px -20px 8px 20px !important;*/
+    transition:.5s ease opacity .3s, .2s ease background .3s, .1s ease color .3s, .3s ease border-radius .6s;
+}
+
+footer .copyright a:hover,
+footer .copyright a:focus {
+  opacity:1;
+  color:#fff;
+  font-weight:600;
+  background:#3A6DB3;
+  border-radius:2px;
+  outline:none !important;
+    transition:.3s ease opacity, .2s ease background .3s, .1s ease color .3s, .2s ease-in border-radius;
+  }

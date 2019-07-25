@@ -101,18 +101,23 @@
     <script type="text/javascript">
       var feed = new Instafeed({
           get: 'user',
-          //UserID # for five.eleven.1995   //userId: '8032352398',
-          //UserID # for wilsontristan   //userId: '14095781',
-          //UserID # for randomusernameasdasd   //userId: '14582150239',
           userId: '14582150239',
-          //accessToken: '14095781.00a5236.846bd97432424571ba649768d21617b8',
           accessToken: '14582150239.00a5236.3ec1337c77e94b5b8ccea3cc8f7e2d47',
           clientId: '00a5236dfa40412298dcac22db494353',
           resolution: 'standard_resolution',
           sortBy: 'most-recent',
           limit: '16',
-          template: '<div class="col-6 col-md-3 col-lg-3 all-pad-15"><div class="col-media-half col-media-insta"><a href="{{link}}" target="_blank"><img src="{{image}}" class="img-media-half"/></a></div></div>' 
-          //Original Insertion Template  //template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+          template: '<div class="col-6 col-md-3 col-lg-3 all-pad-15"><div class="col-media-half col-media-insta"><a href="{{link}}" target="_blank"><img src="{{image}}" class="img-media-half"/></a></div></div>'  
+          
+          //UserID # for jayhagram (prev five.eleven.1995)   //userId: '8032352398',
+          //UserID # for wilsontristan   //userId: '14095781',
+          //UserID # for randomusernameasdasd   //userId: '14582150239',
+          
+          //accessToken for jayhagram: 'NOT YET GENERATED',
+          //accessToken for wilsontristan: '14095781.00a5236.846bd97432424571ba649768d21617b8',
+          //accessToken for randomusernameasdasd: '14582150239.00a5236.3ec1337c77e94b5b8ccea3cc8f7e2d47',
+          
+          //Base Original Insertion Template  //template: '<a href="{{link}}"><img src="{{image}}" /></a>'   
       });
       feed.run();   
     </script>
