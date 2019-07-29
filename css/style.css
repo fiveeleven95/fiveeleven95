@@ -458,6 +458,7 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
 .img-media-css-half-w:hover,
 .img-media-css-half-t:hover {
   /*filter:grayscale(20%);*/
+   -webkit-transform: scale(1.02);
   transform: scale(1.02);
   transition: 1.2s ease-in transform;
   cursor: pointer;
@@ -500,14 +501,27 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
 
 .col-media-insta{
   border-radius:1px;
-  box-shadow:0 0 0px 1px rgba(0,0,0,0.08);
+  /*box-shadow:0 0 0px 1px rgba(0,0,0,0.12);*/
+}
 
+.col-media-insta .link-insta{
+  display:flex;
+  align-items:center;
+  height:100%;
 }
 
 .col-media-insta a .img-media-half{
-     -webkit-transform: scale(1.25) translateY(9%);
-   transform: scale(1.25) translateY(9%);
+  transition: 1.2s ease-in transform;
+  -webkit-transform: scale(1.1) translateY(0%);
+   transform: scale(1.1) translateY(0%);
 }
+
+.col-media-insta a .img-media-half:hover,
+.col-media-insta a .img-media-half:focus{
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
+  transition: 1s ease-in transform;
+ }
 
 .col-media-insta:before{
   content:"";
@@ -519,9 +533,12 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
   background-repeat: no-repeat;
   background-size:cover;
 }
+
 .col-media-insta:hover:before,
 .col-media-insta:focus:before{
-  opacity:1;}
+  opacity:1;
+ }
+
 /* --- Image Enlarge Modal --- */
 
 .modal-img-enlarge .modal-dialog .modal-content {

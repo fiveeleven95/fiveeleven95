@@ -75,7 +75,7 @@
     <!------------------------->
     
     <div class="container container-main">    
-      
+      <div id="test-height"></div>
       <!----- ROW 1 IMAGES LATEST ----->
       <!-- Instagram Recent Photos Insertion -->
       <div class="row">
@@ -96,8 +96,9 @@
     <!-- Based on work by Steven Schobert -->
     <!-- https://github.com/stevenschobert/instafeed.js -->
     <!-- See '../js/licenses/instafeedLicense' -->
-    
+     
     <script src="js/instafeed.js"></script>
+      
     <script type="text/javascript">
       var feed = new Instafeed({
           get: 'user',
@@ -107,7 +108,7 @@
           resolution: 'standard_resolution',
           sortBy: 'most-recent',
           limit: '16',
-          template: '<div class="col-6 col-md-3 col-lg-3 all-pad-15"><div class="col-media-half col-media-insta"><a href="{{link}}" target="_blank"><img src="{{image}}" class="img-media-half"/></a></div></div>'  
+          template: '<div class="col-6 col-md-3 col-lg-3 all-pad-15"><div class="col-media-half col-media-insta"><a href="{{link}}" target="_blank" class="link-insta"><img src="{{image}}" class="img-media-half"/></a></div></div>'  
           
           //UserID # for jayhagram (prev five.eleven.1995)   //userId: '8032352398',
           //UserID # for wilsontristan   //userId: '14095781',
@@ -117,9 +118,10 @@
           //accessToken for wilsontristan: '14095781.00a5236.846bd97432424571ba649768d21617b8',
           //accessToken for randomusernameasdasd: '14582150239.00a5236.3ec1337c77e94b5b8ccea3cc8f7e2d47',
           
-          //Base Original Insertion Template  //template: '<a href="{{link}}"><img src="{{image}}" /></a>'   
+          //Basic Original Insertion Template  //template: '<a href="{{link}}"><img src="{{image}}" /></a>'   
       });
-      feed.run();   
+      feed.run();  
+       
     </script>
     
     <!-- Custom Responsive Image Resize JS -->
@@ -128,32 +130,20 @@
       $(window).resize(boxSizer);
       
       function boxSizer(){
-        var cmw = $('.col-media').width();
         var cmHw = $('.col-media-half').width();
-        $('.col-media').css({'max-height':cmw / 1 + 'px'});
-        $('.col-media-half').css({'max-height':cmHw / 1 + 'px'});
-        $('.col-media-half-w').css({'max-height':cmHw / 1 + 'px'});
-        $('.col-media-half-t').css({'max-height':cmw / 1 + 'px'});
+        $('.col-media-half').css({'max-height':cmHw / 1 + 'px !important'});
+
         $('.img-media').css({'min-height':cmw / 1 + 'px'});
-        $('.img-media-half').css({'min-height':cmHw / 1 + 'px'});
-        $('.img-media-half-w').css({'min-height':cmHw / 1 + 'px'});
-        $('.img-media-half-t').css({'height':cmw / 1 + 'px'});
-        $('.img-media-css').css({'height':cmw / 1 + 'px'});
-        $('.img-media-css-half').css({'height':cmHw / 1 + 'px'});
-        $('.img-media-css-half-w').css({'height':cmHw / 1 + 'px'});
-        $('.img-media-css-half-t').css({'height':cmw / 1 + 'px'});
+        $('.img-media-half').css({'min-width':cmHw / 1 + 'px'});
       }
-    </script>
-    
-    <!-- Extract URL from 'data-image' -->
-    <!-- attribute for CSS Background -->
-    <script type="text/javascript">
-    var list = document.querySelectorAll("img[data-image]");
-  
-    for (var i = 0; i < list.length; i++) {
-      var url = list[i].getAttribute('data-image');
-      list[i].style.backgroundImage="url('" + url + "')";
-    }
+      
+      $(window).on('load', function() {
+        var cmHw = $('.col-media-half').width();
+        $('.col-media-half').css({'height':cmHw / 1 + 'px'});
+        $('.col-media-half').css({'max-height':cmHw / 1 + 'px'});
+      });
+   
+        
     </script>
   
     <footer>
