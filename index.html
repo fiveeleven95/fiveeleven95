@@ -85,8 +85,9 @@
         <div class="col-12 col-md-6 border all-pad-15">
           <div class="col-media pop" tabindex="0">
             <img data-tiny-image="img/tiny-jayhagram(6).jpg" data-image="img/jayhagram(6).jpg" src="img/1px.png" class="img-media-css img-top" alt="Photo credit: coming soon."/>
-            <img src="img/tiny-jayhagram(6).jpg" class="img-fluid" style="z-index:-1;" alt="Jay Hagram modelling a strapless, rose-colored dress." aria-hidden="true"/>
-            <!--<div class="box-loading-ani box-loading-full"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>-->
+            <div class="box-loading-ani box-loading-full"><div class="lds-ellipsis loading-full"><div></div><div></div><div></div><div></div></div></div>
+            <img src="img/tiny-jayhagram(6).jpg" class="img-fluid" alt="Jay Hagram modelling a strapless, rose-colored dress." style="z-index:-100; height: 1px !important;" aria-hidden="true"/>
+            
           </div>
         </div>
         
@@ -95,13 +96,13 @@
             <div class="col-6 col-lg-6 all-pad-15">
               <div class="col-media-half pop" tabindex="0">
                 <img data-tiny-image="img/tiny-jayhagram(8).png" data-image="img/jayhagram(8).png" src="img/1px.png" class="img-media-css-half img-top" alt="Jumpsuit by @dur_doux + photos by @phelanmarc + makeup by @modelagain4"/>
-                <!--<div class="box-loading-ani box-loading-half"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>-->
+                <div class="box-loading-ani box-loading-half"><div class="lds-ellipsis loading-half"><div></div><div></div><div></div><div></div></div></div>
               </div>
             </div>
             <div class="col-6 col-lg-6 all-pad-15">
               <div class="col-media-half pop" tabindex="0">
                 <img data-tiny-image="img/tiny-jayhagram(9).png" data-image="img/jayhagram(9).png" src="img/1px.png" class="img-media-css-half img-top" alt="Photo credit: @camilo.e.morales"/>
-                <!--<div class="box-loading-ani box-loading-half"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>-->
+                <div class="box-loading-ani box-loading-half"><div class="lds-ellipsis loading-half"><div></div><div></div><div></div><div></div></div></div>
               </div>
             </div>
           </div>
@@ -109,7 +110,7 @@
             <div class="col-12 col-lg-12 all-pad-15">
               <div class="col-media-half-w pop" tabindex="0">
                 <img data-tiny-image="img/tiny-jayhagram(1).png" data-image="img/jayhagram(1).png" src="img/1px.png" class="img-media-css-half-w img-top" alt="Photo credit: @santomartinezphoto"/>
-                <!--<div class="box-loading-ani box-loading-full box-loading-half-h"><div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>-->
+                <div class="box-loading-ani box-loading-full box-loading-half-h"><div class="lds-ellipsis loading-full loading-half-h"><div></div><div></div><div></div><div></div></div></div>
               </div>
             </div>
           </div>
@@ -246,11 +247,14 @@
         $('.img-media-css-half').css({'height':cmHw / 1 + 'px'});
         $('.img-media-css-half-w').css({'height':cmHw / 1 + 'px'});
         $('.img-media-css-half-t').css({'height':cmw / 1 + 'px'});
-        //$('.box-loading-full').css({'width':cmw / 1 + 'px'});
-        //$('.box-loading-full').css({'top':cmw / 2 + 'px'});
-        //$('.box-loading-half').css({'width':cmHw / 1 + 'px'});
-        //$('.box-loading-half').css({'top':cmHw / 2 + 'px'});
-        //$('.box-loading-half-h').css({'top':cmHw / 2 + 'px'});
+        $('.box-loading-full').css({'width':cmw / 1 + 'px'}).css({'height':cmw / 1 + 'px'}).css({'top':'15px'}).css({'opacity':'1'});
+        $('.box-loading-half').css({'width':cmHw / 1 + 'px'}).css({'height':cmHw / 1 + 'px'}).css({'top':'15px'}).css({'opacity':'1'});
+        $('.box-loading-half-h').css({'height':cmHw / 1 + 'px'}).css({'top':'15px'}).css({'opacity':'1'});
+        //$('.box-loading-full').css({'height':cmw / 1 + 'px'});
+        //$('.box-loading-half').css({'height':cmHw / 1 + 'px'});
+        //$('.loading-full').css({'top':cmw / 2 + 'px'});
+        //$('.loading-half').css({'top':cmHw / 2 + 'px'});
+        //$('.loading-half-h').css({'top':cmHw / 2 + 'px'});
       }
     </script>
     

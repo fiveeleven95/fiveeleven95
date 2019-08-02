@@ -354,7 +354,7 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
 .col-media-half-t {
   padding: 0;
   overflow: hidden !important;
-  background: url(../img/loading-ring-gray.gif) center no-repeat;
+  /*background: url(../img/loading-ring-gray.gif) center no-repeat;*/
   background-size: 50px;
 }
 
@@ -542,17 +542,21 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
 /* -- Animated CSS-only Loading Icon from Loading.io -- */
 /* ----------- Customized for jyahgram.com ------------ */
 
-/*.box-loading-full{top:40%;  width:90%;}
-.box-loading-half{top:40%;  width:90%;}
-.box-loading-half-h{top:23%;  width:95%;}
+.box-loading-full{width:90%;}
+.box-loading-half{width:90%;}
+.box-loading-half-h{width:95%;}
 
 .box-loading-ani{
-  display:inline;
+  display:flex;
+  align-items:center;
   position:absolute;
+  top:0;
   z-index:-40;
-  height:auto;
+  height:100%;
   padding:0 0 0 0 !important;
   margin:0 !important;
+  opacity:0;
+  transition: .3s linear opacity;
 }
 
 .lds-ellipsis {
@@ -573,23 +577,23 @@ a:hover, a:focus { color: #767676; text-decoration: none;}
 }
 .lds-ellipsis div:nth-child(1) {
   left: 2px;
-  animation: lds-ellipsis1 0.8s infinite;
+  animation: lds-ellipsis1 0.8s 5;
 }
 .lds-ellipsis div:nth-child(2) {
   left: 2px;
-  animation: lds-ellipsis2 0.8s infinite;
+  animation: lds-ellipsis2 0.8s 5;
 }
 .lds-ellipsis div:nth-child(3) {
   left: 27px;
-  animation: lds-ellipsis2 0.8s infinite;
+  animation: lds-ellipsis2 0.8s 5;
 }
 .lds-ellipsis div:nth-child(4) {
   left: 51px;
-  animation: lds-ellipsis3 0.8s infinite;
+  animation: lds-ellipsis3 0.8s 5;
 }
 @keyframes lds-ellipsis1 {0% {transform: scale(0);} 100% {transform: scale(1);}}
 @keyframes lds-ellipsis3 {0% {transform: scale(1);} 100% {transform: scale(0);}}
-@keyframes lds-ellipsis2 {0% {transform: translate(0, 0);} 100% {transform: translate(25px, 0);}}*/
+@keyframes lds-ellipsis2 {0% {transform: translate(0, 0);} 100% {transform: translate(25px, 0);}}
 
 
 /* ------------------------------------------ */
